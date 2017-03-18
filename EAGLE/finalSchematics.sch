@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7779,6 +7779,89 @@ Source: Datasheet_ANT-NSG4712-6.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="components">
+<packages>
+<package name="L70B-GPS">
+<smd name="TIMER" x="0" y="0" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="R2" x="0" y="1.1" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="R1" x="0" y="2.2" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="NC1" x="0" y="3.3" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="VCC_RF" x="0" y="4.4" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="ANTON" x="0" y="5.5" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="GND2" x="0" y="6.6" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="RF_IN" x="0" y="7.7" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="GND1" x="0" y="8.8" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="GND3" x="9.7" y="0" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="TXD1" x="9.7" y="1.1" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="RXD1" x="9.7" y="2.2" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="1PPS" x="9.7" y="3.3" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="STANDBY" x="9.7" y="4.4" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="V_BCKP" x="9.7" y="5.5" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="NC2" x="9.7" y="6.6" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="VCC" x="9.7" y="7.7" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<smd name="RESET" x="9.7" y="8.8" dx="1.8" dy="0.8" layer="1" roundness="100"/>
+<wire x1="0" y1="-0.65" x2="0" y2="9.43" width="0.05" layer="21"/>
+<wire x1="0" y1="9.43" x2="9.7" y2="9.43" width="0.05" layer="21"/>
+<wire x1="9.7" y1="9.43" x2="9.7" y2="0.42" width="0.05" layer="21"/>
+<wire x1="9.7" y1="0.42" x2="9.7" y2="-0.65" width="0.05" layer="21"/>
+<wire x1="9.7" y1="-0.65" x2="8.63" y2="-0.65" width="0.05" layer="21"/>
+<wire x1="8.63" y1="-0.65" x2="0" y2="-0.65" width="0.05" layer="21"/>
+<wire x1="8.63" y1="-0.65" x2="9.7" y2="0.42" width="0.05" layer="21"/>
+<text x="0" y="10" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.03" y="-1.34" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="L70B-GPS">
+<pin name="GND" x="-20.32" y="-7.62" length="short" direction="pwr"/>
+<pin name="VCC" x="-20.32" y="-2.54" length="short" direction="pwr"/>
+<pin name="RF_IN" x="20.32" y="10.16" length="short" direction="out" rot="R180"/>
+<pin name="ANTON" x="20.32" y="7.62" length="short" direction="in" rot="R180"/>
+<pin name="VCC_RF" x="-20.32" y="0" length="short"/>
+<pin name="TIMER" x="-20.32" y="10.16" length="short" direction="in"/>
+<pin name="RESET" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="V_BCKP" x="-20.32" y="2.54" length="short"/>
+<pin name="STANDBY" x="-20.32" y="7.62" length="short" direction="in"/>
+<pin name="1PPS" x="20.32" y="-5.08" length="short" direction="out" rot="R180"/>
+<pin name="RX1" x="20.32" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="TX1" x="20.32" y="0" length="short" direction="in" rot="R180"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="12.7" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
+<text x="-17.526" y="13.462" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.526" y="-13.208" size="1.778" layer="96">&gt; VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="L70B-GPS" prefix="MOD" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="L70B-GPS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L70B-GPS">
+<connects>
+<connect gate="G$1" pin="1PPS" pad="1PPS"/>
+<connect gate="G$1" pin="ANTON" pad="ANTON"/>
+<connect gate="G$1" pin="GND" pad="GND1 GND2 GND3"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="RF_IN" pad="RF_IN"/>
+<connect gate="G$1" pin="RX1" pad="RXD1"/>
+<connect gate="G$1" pin="STANDBY" pad="STANDBY"/>
+<connect gate="G$1" pin="TIMER" pad="TIMER"/>
+<connect gate="G$1" pin="TX1" pad="TXD1"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VCC_RF" pad="VCC_RF"/>
+<connect gate="G$1" pin="V_BCKP" pad="V_BCKP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7811,6 +7894,7 @@ Source: Datasheet_ANT-NSG4712-6.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
+<part name="MOD1" library="components" deviceset="L70B-GPS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8033,6 +8117,7 @@ Source: Datasheet_ANT-NSG4712-6.pdf</description>
 <instance part="RADIOANA" gate="A" x="142.24" y="93.98" rot="R270"/>
 <instance part="+3V1" gate="G$1" x="53.34" y="91.44" rot="R90"/>
 <instance part="GPSANA" gate="G$1" x="165.1" y="152.4"/>
+<instance part="MOD1" gate="G$1" x="96.52" y="152.4"/>
 </instances>
 <busses>
 </busses>
