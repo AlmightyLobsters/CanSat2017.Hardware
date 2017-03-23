@@ -20583,6 +20583,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="1NF" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="10k 901-655"/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20782,6 +20784,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="1NF" gate="G$1" x="27.94" y="134.62" rot="R90"/>
 <instance part="JP1" gate="A" x="187.96" y="137.16"/>
 <instance part="GND3" gate="1" x="177.8" y="121.92"/>
+<instance part="R1" gate="G$1" x="68.58" y="121.92" rot="R90"/>
+<instance part="GND23" gate="1" x="58.42" y="114.3" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -20902,6 +20906,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="185.42" y1="134.62" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="134.62" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="116.84" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="68.58" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CS-RAD" class="0">
 <segment>
@@ -20942,6 +20952,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="76.2" y1="147.32" x2="71.12" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="147.32" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
 <junction x="71.12" y="149.86"/>
+<pinref part="IC1" gate="MCU" pin="VBAT"/>
+<wire x1="76.2" y1="152.4" x2="71.12" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="152.4" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="3.3V"/>
@@ -21272,9 +21285,29 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="170.18" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="IC1" gate="MCU" pin="BOOT0"/>
+<wire x1="76.2" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="132.08" x2="68.58" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="204,2,220.98,43.18,U$2,NC,,,,"/>
+<approved hash="208,1,78.74,210.82,+3V3,out,,,,"/>
+<approved hash="208,1,78.74,208.28,+3V3,out,,,,"/>
+<approved hash="208,1,134.62,175.26,+3V3,sup,,,,"/>
+<approved hash="208,2,284.48,116.84,+3V3,sup,,,,"/>
+<approved hash="208,2,276.86,162.56,+3V3,sup,,,,"/>
+<approved hash="208,2,292.1,223.52,+3V3,sup,,,,"/>
+<approved hash="208,2,66.04,149.86,+3V3,sup,,,,"/>
+<approved hash="208,2,167.64,22.86,+3V3,sup,,,,"/>
+<approved hash="208,2,157.48,218.44,+3V3,sup,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
