@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20515,8 +20515,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="4.7p 906-099"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="4.7p 906-099"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="15p"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="15p"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -20524,7 +20524,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="MOD2" library="BME280" deviceset="BME280" device="" value="BME280"/>
 <part name="MOD3" library="IMU" deviceset="IMU04A" device=""/>
-<part name="SD1" library="components" deviceset="SD" device=""/>
+<part name="SD1" library="components" deviceset="SD" device="" value="SD"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
@@ -20538,7 +20538,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
+<part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device="" value="PWR"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun-IC-Power" deviceset="V_REG_LM1117" device="SOT223" value="LM1117-3.3"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -20558,33 +20558,35 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="153CLV-0810" value="47uF"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="1N4004" device=""/>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0603"/>
-<part name="270OHM" library="resistor" deviceset="R-EU_" device="R0805"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0603" value="GRN"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="R0805" value="270"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="270OHM1" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0603"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0805" value="270"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0603" value="GRN"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="270OHM2" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0603"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0805" value="270"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0603" value="GRN"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X5" device=""/>
-<part name="1NF" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X5" device="" value="SWD"/>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X3" device="" value="DBG"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="10k 901-655"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP"/>
+<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP" value="8 MHz"/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20611,7 +20613,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="C11" gate="G$1" x="233.68" y="165.1"/>
 <instance part="+3V10" gate="G$1" x="134.62" y="177.8"/>
 <instance part="GND18" gate="1" x="233.68" y="152.4"/>
-<instance part="D1" gate="1" x="45.72" y="210.82"/>
+<instance part="D1" gate="1" x="50.8" y="198.12" rot="R90"/>
+<instance part="GND24" gate="1" x="50.8" y="187.96"/>
 </instances>
 <busses>
 </busses>
@@ -20661,6 +20664,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="233.68" y1="154.94" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
 <junction x="233.68" y="160.02"/>
 </segment>
+<segment>
+<pinref part="GND24" gate="1" pin="GND"/>
+<pinref part="D1" gate="1" pin="A"/>
+<wire x1="50.8" y1="190.5" x2="50.8" y2="195.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -20669,7 +20677,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="58.42" y1="203.2" x2="58.42" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
-<wire x1="48.26" y1="210.82" x2="58.42" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="210.82" x2="50.8" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="210.82" x2="50.8" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="210.82" x2="38.1" y2="210.82" width="0.1524" layer="91"/>
+<junction x="50.8" y="210.82"/>
 <junction x="58.42" y="210.82"/>
 </segment>
 </net>
@@ -20711,13 +20723,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="134.62" y1="175.26" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
 <junction x="134.62" y="167.64"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<pinref part="D1" gate="1" pin="A"/>
-<wire x1="38.1" y1="210.82" x2="43.18" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -20767,22 +20772,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="GND14" gate="1" x="261.62" y="25.4"/>
 <instance part="GND15" gate="1" x="264.16" y="33.02" rot="R90"/>
 <instance part="LED1" gate="G$1" x="33.02" y="203.2" rot="R270"/>
-<instance part="270OHM" gate="G$1" x="45.72" y="203.2"/>
+<instance part="R4" gate="G$1" x="45.72" y="203.2"/>
 <instance part="GND19" gate="1" x="20.32" y="203.2" rot="R270"/>
-<instance part="270OHM1" gate="G$1" x="45.72" y="187.96"/>
+<instance part="R6" gate="G$1" x="45.72" y="187.96"/>
 <instance part="LED2" gate="G$1" x="33.02" y="187.96" rot="R270"/>
 <instance part="GND20" gate="1" x="20.32" y="187.96" rot="R270"/>
-<instance part="270OHM2" gate="G$1" x="45.72" y="195.58"/>
+<instance part="R5" gate="G$1" x="45.72" y="195.58"/>
 <instance part="LED3" gate="G$1" x="33.02" y="195.58" rot="R270"/>
 <instance part="GND21" gate="1" x="20.32" y="195.58" rot="R270"/>
 <instance part="GND22" gate="1" x="104.14" y="86.36" rot="R90"/>
 <instance part="JP2" gate="A" x="50.8" y="81.28" rot="R180"/>
-<instance part="1NF" gate="G$1" x="27.94" y="134.62" rot="R90"/>
+<instance part="C12" gate="G$1" x="35.56" y="129.54" rot="R180"/>
 <instance part="JP1" gate="A" x="187.96" y="137.16"/>
 <instance part="GND3" gate="1" x="177.8" y="121.92"/>
 <instance part="R1" gate="G$1" x="68.58" y="121.92" rot="R90"/>
 <instance part="GND23" gate="1" x="58.42" y="114.3" rot="R270"/>
 <instance part="Q1" gate="G$1" x="66.04" y="161.29" rot="R90"/>
+<instance part="GND25" gate="1" x="35.56" y="124.46"/>
 </instances>
 <busses>
 </busses>
@@ -20908,6 +20914,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="68.58" y1="116.84" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="68.58" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="GND25" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="CS-RAD" class="0">
@@ -21167,13 +21177,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="50.8" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="IC1" gate="MCU" pin="NRST"/>
-<wire x1="76.2" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="1NF" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="SWDIO" class="0">
 <segment>
 <pinref part="IC1" gate="MCU" pin="PA13"/>
@@ -21215,26 +21218,26 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="IC1" gate="MCU" pin="PC7"/>
 <wire x1="76.2" y1="193.04" x2="50.8" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="193.04" x2="50.8" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="270OHM1" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="IC1" gate="MCU" pin="PC8"/>
 <wire x1="76.2" y1="195.58" x2="50.8" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="270OHM2" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="270OHM" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="203.2" x2="40.64" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="270OHM" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="203.2" x2="50.8" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="MCU" pin="PC9"/>
 <wire x1="50.8" y1="198.12" x2="76.2" y2="198.12" width="0.1524" layer="91"/>
@@ -21243,27 +21246,30 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <net name="N$12" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="270OHM1" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="187.96" x2="40.64" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="270OHM2" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="195.58" x2="35.56" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NRST" class="0">
 <segment>
-<pinref part="1NF" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="134.62" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
-<label x="15.24" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="1"/>
 <wire x1="53.34" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
 <label x="86.36" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="MCU" pin="NRST"/>
+<wire x1="76.2" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="134.62" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
+<label x="20.32" y="134.62" size="1.778" layer="95"/>
+<junction x="35.56" y="134.62"/>
 </segment>
 </net>
 <net name="RXDBG" class="0">
@@ -21294,9 +21300,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,2,287.02,109.22,SD1,VDD,+3V3,,,"/>
+<approved hash="104,2,76.2,147.32,IC1,VDDA,+3V3,,,"/>
+<approved hash="104,2,76.2,139.7,IC1,VSSA,GND,,,"/>
+<approved hash="104,2,76.2,152.4,IC1,VBAT,+3V3,,,"/>
+<approved hash="104,2,76.2,142.24,IC1,VSS,GND,,,"/>
+<approved hash="104,2,76.2,149.86,IC1,VDD,+3V3,,,"/>
+<approved hash="104,2,190.5,22.86,U$2,3.3V,+3V3,,,"/>
 <approved hash="204,2,220.98,43.18,U$2,NC,,,,"/>
+<approved hash="104,2,48.26,27.94,MOD4,VCC,+3V3,,,"/>
+<approved hash="202,2,88.9,38.1,MOD4,ANTON,,,,"/>
+<approved hash="202,2,48.26,40.64,MOD4,TIMER,,,,"/>
+<approved hash="202,2,48.26,38.1,MOD4,STANDBY,,,,"/>
+<approved hash="206,1,78.74,210.82,+3V3,,,,,"/>
+<approved hash="206,1,78.74,208.28,+3V3,,,,,"/>
 <approved hash="208,1,78.74,210.82,+3V3,out,,,,"/>
 <approved hash="208,1,78.74,208.28,+3V3,out,,,,"/>
+<approved hash="208,1,104.14,218.44,+3V3,sup,,,,"/>
 <approved hash="208,1,134.62,175.26,+3V3,sup,,,,"/>
 <approved hash="208,2,284.48,116.84,+3V3,sup,,,,"/>
 <approved hash="208,2,276.86,162.56,+3V3,sup,,,,"/>
@@ -21304,6 +21324,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <approved hash="208,2,66.04,149.86,+3V3,sup,,,,"/>
 <approved hash="208,2,167.64,22.86,+3V3,sup,,,,"/>
 <approved hash="208,2,157.48,218.44,+3V3,sup,,,,"/>
+<approved hash="208,2,165.1,218.44,+3V3,sup,,,,"/>
+<approved hash="208,2,25.4,27.94,+3V3,sup,,,,"/>
+<approved hash="113,2,178.331,114.831,FRAME1,,,,,"/>
+<approved hash="113,1,178.331,112.291,FRAME2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
